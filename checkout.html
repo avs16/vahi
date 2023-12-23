@@ -1,0 +1,335 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Vahi's Bakers Choice</title>
+  
+  
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/aos.min.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/nice-select.min.css">
+  <link rel="stylesheet" href="css/slick.min.css">
+  <link rel="stylesheet" href="css/gijgo.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+     .float{
+      position:fixed;
+      width:60px;
+      height:60px;
+      bottom:40px;
+      right:40px;
+      background-color:#25d366;
+      color:#FFF;
+      border-radius:50px;
+      text-align:center;
+      font-size:30px;
+      box-shadow: 2px 2px 3px #999;
+      z-index:100;
+    }
+    
+    .my-float{
+      margin-top:16px;
+    }
+  </style>
+</head>
+
+<body data-theme="light">
+    <div class="site-wrapper overflow-hidden">
+        <!-- Header Area -->
+        <header class="site-header site-header--menu-center pt-8 pt-lg-0 site-header--absolute">
+          <div class="container-fluid pr-lg-9 pl-lg-9">
+            <nav class="navbar site-navbar offcanvas-active navbar-expand-lg  px-0">
+              <!-- Brand Logo-->
+              <div class="brand-logo"><a href="#">
+                  <img src="images/logo.png" alt="" class="light-verson-logo " style="height: 68px;">
+                </a></div>
+              <div class="collapse navbar-collapse" id="mobile-menu">
+                <div class="navbar-nav-wrapper">
+                  <ul class="navbar-nav main-menu">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" role="button" aria-expanded="false">About us</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" role="button" aria-expanded="false">Contact Us</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" role="button" aria-expanded="false">Shop</a>
+                      </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" role="button" aria-expanded="false">Support</a>
+                    </li>
+                  </ul>
+                </div>
+                <button class="d-block d-lg-none offcanvas-btn-close" type="button" data-toggle="collapse" data-target="#mobile-menu" aria-controls="mobile-menu" aria-expanded="true" aria-label="Toggle navigation">
+                  <i class="gr-cross-icon"></i>
+                </button>
+              </div>
+              <a href='' class='header-cart'><i class='fa fa-shopping-cart'></i><span class='car'>2</span></a>
+              <!-- Mobile Menu Hamburger-->
+              <button class="navbar-toggler btn-close-off-canvas  hamburger-icon border-0" type="button" data-toggle="collapse" data-target="#mobile-menu" aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- <i class="icon icon-simple-remove icon-close"></i> -->
+                <span class="hamburger hamburger--squeeze js-hamburger">
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+                </span>
+                </span>
+              </button>
+              <!--/.Mobile Menu Hamburger Ends-->
+            </nav>
+          </div>
+        </header>
+       
+        <div class="inner-banner pt-29 pb-md-13 bg-default-2">
+            <div class="container">
+              <div class="row  justify-content-center pt-5">
+                <div class="col-xl-8 col-lg-9">
+                  <div class="px-md-15 text-center">
+                    <h2 class="title gr-text-2 mb-9">Checkout</h2>
+                    <p class="gr-text-8 mb-13">2 Items on your cart</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-default-2 pb-17 pb-md-29 ">
+            <div class="container">
+              <div class="row justify-content-md-between pt-9">
+                <div class="col-lg-7 col-xl-7">
+                  <div class="login-form bg-white border-gray-3 px-md-12 px-7 pt-12 pb-13 shadow-1 rounded-10 mb-9">
+                    <h3 class="gr-text-7 font-weight-bold mb-8 text-blackish-blue">Billing Details</h3>
+                    <form action="./" autocomplete="off">
+                      <div class="row">
+                        
+                        <div class="col-12">
+                          <div class="form-group mb-7">
+                            <label for="name" class="gr-text-11 font-weight-bold text-blackish-blue">First & Last Name</label>
+                            <input class="form-control gr-text-11 border-gray-3 px-4" type="text" id="name" placeholder="i.e. Hari">
+                          </div>
+                        </div>
+                        
+                        <div class="col-12">
+                          <div class="form-group mb-7">
+                            <label for="email" class="gr-text-11 font-weight-bold text-blackish-blue">Email Address</label>
+                            <input class="form-control gr-text-11 border" type="text" id="email" placeholder="i.e. hari@gmail.com">
+                          </div>
+                        </div>
+                        
+                        <div class="col-12 mb-9">
+                          <div class="form-group">
+                            <label for="country" class="gr-text-11 font-weight-bold text-blackish-blue">Country</label>
+                            <select name="country-select" id="country" class="nice-select gr-text-11 text-blackish-blue">
+                                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                                <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                                <option value="Assam">Assam</option>
+                                <option value="Bihar">Bihar</option>
+                                <option value="Chhattisgarh">Chhattisgarh</option>
+                                <option value="Goa">Goa</option>
+                                <option value="Gujarat">Gujarat</option>
+                                <option value="Haryana">Haryana</option>
+                                <option value="Himachal Pradesh">Himachal Pradesh</option>
+                                <option value="Jharkhand">Jharkhand</option>
+                                <option value="Karnataka">Karnataka</option>
+                                <option value="Kerala">Kerala</option>
+                                <option value="Madhya Pradesh">Madhya Pradesh</option>
+                                <option value="Maharashtra">Maharashtra</option>
+                                <option value="Manipur">Manipur</option>
+                                <option value="Meghalaya">Meghalaya</option>
+                                <option value="Mizoram">Mizoram</option>
+                                <option value="Nagaland">Nagaland</option>
+                                <option value="Odisha">Odisha</option>
+                                <option value="Punjab">Punjab</option>
+                                <option value="Rajasthan">Rajasthan</option>
+                                <option value="Sikkim">Sikkim</option>
+                                <option value="Tamil Nadu">Tamil Nadu</option>
+                                <option value="Telangana">Telangana</option>
+                                <option value="Tripura">Tripura</option>
+                                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                <option value="Uttarakhand">Uttarakhand</option>
+                                <option value="West Bengal">West Bengal</option>
+                                <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                                <option value="Chandigarh">Chandigarh</option>
+                                <option value="Dadra and Nagar Haveli and Daman and Diu">Dadra and Nagar Haveli and Daman and Diu</option>
+                                <option value="Delhi">Delhi</option>
+                                <option value="Lakshadweep">Lakshadweep</option>
+                                <option value="Puducherry">Puducherry</option>
+                                
+                            </select>
+                          </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                          <div class="form-group mb-7">
+                            <label for="city" class="gr-text-11 font-weight-bold text-blackish-blue">City/State</label>
+                            <input class="form-control gr-text-11 border" type="text" id="city" placeholder="City">
+                          </div>
+                        </div>
+                        
+                        <div class="col-md-6 pb-9">
+                          <div class="form-group mb-7">
+                            <label for="zip" class="gr-text-11 font-weight-bold text-blackish-blue">Zip/Postal Code</label>
+                            <input class="form-control gr-text-11 border" type="text" id="zip" placeholder="Zip Code">
+                          </div>
+                        </div>
+                        
+                        
+                        <div class="col-12">
+                          <div class="button-block mt-3 ">
+                            <p class="gr-text-11 mb-7 text-blackish-blue">By clicking the button you agree the <a href="#">Terms and Conditions</a></p>
+                            <a href="order-placed.html" class="form-btn btn btn-primary w-100">Place the order</a>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="col-sm-7 col-md-7 col-lg-5">
+                  <div class="bg-white px-7 pt-8 pb-9 rounded-10 ml-lg-8  ml-xl-19 mt-9 mt-md-0">
+                    <h3 class="gr-text-12 font-weight-bold text-blackish-blue text-uppercase pb-7">Order Details</h3>
+                    <ul class="list-unstyled">
+                      <li class="d-flex justify-content-between mb-5">
+                        <span class="d-block gr-text-9 text-blackish-blue">Total Items</span>
+                        <div class="d-flex gr-text-9">
+                          <span class="d-inline-flex  pl-7 pt-5 position-relative mr-2 ">
+                        <input type="text" value="02" class="border-0 p-0 w-100 h-100 gr-abs-tl gr-text-9 gr-text-opacity focus-reset pointer-none text-blackish-blue-opacity"> 
+                      </span>
+                          items
+                        </div>
+                      </li>
+                      <li class="mb-5">
+                        <div class="d-flex position-relative p-6 border-gray-3 rounded-10 pr-12">
+                          <div class="square-50 mr-6">
+                            <img src="images/7.png" alt="" style="height: 50px; width: 50px;">
+                          </div>
+                          <div>
+                            <h3 class="gr-text-9 mb-0 text-blackish-blue">Coco Powder 100 Grams</h3>
+                            <div class="bottom-texts d-flex justify-content-between">
+                              <span class="inline-block gr-text-12 font-weight-bold text-uppercase text-blackish-blue">1 item</span>
+                              <span class="inline-block gr-text-12 font-weight-bold text-bold text-blackish-blue">₹80</span>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="mb-8">
+                        <div class="d-flex position-relative p-6 border-gray-3 rounded-10 pr-12">
+                          <div class="square-50 mr-6">
+                            <img src="images/9.png" alt="" style="height: 50px; width: 50px;">
+                          </div>
+                          <div>
+                            <h3 class="gr-text-9 mb-0 text-blackish-blue">White Choco Chips 100 gms</h3>
+                            <div class="bottom-texts d-flex justify-content-between">
+                              <span class="inline-block gr-text-12 font-weight-bold text-uppercase text-blackish-blue">2 items</span>
+                              <span class="inline-block gr-text-12 font-weight-bold text-bold text-blackish-blue">₹120</span>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="d-flex justify-content-between mb-9">
+                        <span class="d-block gr-text-9 text-blackish-blue">Delivery Fee</span>
+                        <span class="d-flex gr-text-9 font-weight-mid text-green-shamrock"> ₹ 80</span>
+                      </li>
+                      <li class="d-flex justify-content-between">
+                        <span class="d-block gr-text-7 font-weight-bold text-blackish-blue">Total Price</span>
+                        <span class="d-block gr-text-7 font-weight-bold text-blackish-blue">₹280</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+        <div class="footer-section bg-default-4">
+          <div class="container">
+            <div class="footer-top pt-15 pt-lg-25 pb-lg-19">
+              <div class="row">
+                <div class="col-6 col-lg-2">
+                  <div class="single-footer mb-13 mb-lg-9">
+                    <p class="footer-title gr-text-11 mb-7">Company</p>
+                    <ul class="footer-list list-unstyled">
+                      <li class="py-2"><a class="gr-text-9 gr-text-color" href="">About us</a></li>
+                      <li class="py-2"><a class="gr-text-9 gr-text-color" href="">Contact us</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-2">
+                  <div class="single-footer mb-13 mb-lg-9">
+                    <p class="footer-title gr-text-11 mb-7">Products</p>
+                    <ul class="footer-list list-unstyled">
+                      <li class="py-2"><a class="gr-text-9 gr-text-color" href="">Product 1</a></li>
+                      <li class="py-2"><a class="gr-text-9 gr-text-color" href="">Product 2</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-2">
+                  <div class="single-footer mb-13 mb-lg-9">
+                    <p class="footer-title gr-text-11 mb-7">Category</p>
+                    <ul class="footer-list list-unstyled">
+                      <li class="py-2"><a class="gr-text-9 gr-text-color" href="">Category 1</a></li>
+                      <li class="py-2"><a class="gr-text-9 gr-text-color" href="">Category 2</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-3 pl-lg-15">
+                  <div class="single-footer mb-13 mb-lg-9">
+                    <p class="footer-title gr-text-11 mb-7">Legal</p>
+                    <ul class="footer-list list-unstyled">
+                      <li class="py-2"><a class="gr-text-9 gr-text-color" href="">Terms & Conditions</a></li>
+                      <li class="py-2"><a class="gr-text-9 gr-text-color" href="">Return Policy</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                  <div class="single-footer mb-13 mb-lg-9">
+                    <p class="footer-title gr-text-11 mb-7">Contact us</p>
+                    <ul class="footer-list list-unstyled">
+                      <li class="py-2"><a class="gr-text-9 text-primary font-weight-bold hover-underline active" href="#">support@vahi.com</a></li>
+                      <li class="py-2"><a class="gr-text-9 text-primary font-weight-bold hover-underline active" href="tel:+91 12345 67890">+91 12345 67890</a></li>
+                      <li  class="py-2 gr-text-12 text-primary font-weight-bold hover-underline active">
+                        Vahi's Cakes, C/o. Vaheeda, SF no. 582/1A, Site no.454, Temple Town Phase 1, Near Star Resort, T. G. Pudur, Teacher's Colony, Karamadai, 641104
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="copyright-area border-top pt-9 pb-8">
+              <div class="row align-items-center">
+                <div class="col-lg-6">
+                  <p class="copyright-text gr-text-11 mb-6 mb-lg-0 gr-text-color text-center text-lg-left">
+                    &copy; 2023 Copyright, All Right Reserved, Made in
+                    <i class="fa fa-heart align-middle ml-2" style="color: red;"></i>
+                    by alwar
+                  </p>
+                </div>
+                <div class="col-lg-6 text-center text-lg-right">
+                  <ul class="social-icons list-unstyled mb-0 mr-n9">
+                    <li class="gr-text-7"><a href="https://www.instagram.com/vahisbakerschoice/" target="_blank" class="gr-text-color-opacity mr-9"><i class="fa fa-instagram"></i></a></li>
+                    <li class="gr-text-7"><a href="https://www.facebook.com/MoniHakkim" target="_blank" class="gr-text-color-opacity mr-9"><i class="fa fa-facebook"></i></a></li>
+                    <li class="gr-text-7"><span class="gr-text-color-opacity mr-9">Vahi Baker Choice</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  <script src="js/landing-page.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/nice-select.js"></script>
+  
+  <script src="js/aos.js"></script>
+  <script src="js/slick.js"></script>
+  <script src="js/date.js"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/theme.js"></script>
+</body>
+
+</html>
