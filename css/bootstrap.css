@@ -24857,3 +24857,258 @@ a.text-narvik:hover, a.text-narvik:focus {
 }
 
 /*# sourceMappingURL=maps/bootstrap.css.map */
+
+.domain-area {
+  padding-top: 50px;
+  padding-bottom: 57px;
+}
+
+@media (min-width: 768px) {
+  .domain-area {
+    padding-top: 5px;
+  }
+}
+
+@media (min-width: 992px) {
+  .domain-area {
+    padding-top: 5px;
+  }
+}
+
+.domain-area__heading h2 {
+  color: #0D152E;
+  font-size: 40px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: -1.58px;
+  line-height: 50px;
+}
+
+@media (min-width: 576px) {
+  .domain-area__heading h2 {
+    font-size: 48px;
+    line-height: 60px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .domain-search-area {
+    padding: 0px 10px;
+  }
+}
+
+.domain-search-area__search-form {
+  width: 100%;
+  box-shadow: 0 31px 32px rgba(170, 170, 170, 0.16);
+  border-radius: 15px;
+  background-color: #fff;
+  padding: 20px 15px 20px 15px;
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .domain-search-area__search-form {
+    padding: 10px 10px 10px 30px;
+    border-radius: 45px;
+    margin-top: 45px;
+  }
+}
+
+.domain-search-area__input {
+  position: relative;
+}
+
+@media (min-width: 576px) {
+  .domain-search-area__input {
+    margin-right: 30px;
+  }
+}
+
+.domain-search-area__input .form-control {
+  width: 100%;
+  border: 0;
+  color: #9EA1AB;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  padding-left: 0px;
+  letter-spacing: -0.59px;
+  line-height: normal;
+}
+
+@media (min-width: 576px) {
+  .domain-search-area__input .form-control {
+    width: 350px;
+  }
+}
+
+@media (min-width: 768px) {
+  .domain-search-area__input .form-control {
+    width: 325px;
+  }
+}
+
+@media (min-width: 992px) {
+  .domain-search-area__input .form-control {
+    padding-left: 10px;
+    width: 480px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .domain-search-area__input .form-control {
+    width: 665px;
+  }
+}
+
+@media (min-width: 1366px) {
+  .domain-search-area__input .form-control {
+    width: 685px;
+  }
+}
+
+@media (min-width: 768px) {
+  .domain-search-area__input:after {
+    position: absolute;
+    content: "";
+    /* background: #EAECED; */
+    height: 90px;
+    width: 1px;
+    right: 0;
+    top: -27px;
+  }
+}
+
+.domain-search-area__dropdown {
+  display: inline-block;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .domain-search-area__dropdown {
+    width: initial;
+  }
+}
+
+.domain-search-area__dropdown .nice-select {
+  padding-left: 0;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .domain-search-area__dropdown .nice-select {
+    width: 100px;
+  }
+}
+
+@media (min-width: 992px) {
+  .domain-search-area__dropdown .nice-select {
+    width: 150px;
+  }
+}
+
+.domain-search-area__dropdown .nice-select .list {
+  width: 100%;
+}
+
+.domain-search-area__dropdown span {
+  color: #9EA1AB;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: -0.59px;
+  line-height: normal;
+}
+
+.domain-search-area__dropdown ul li {
+  color: #9EA1AB;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: -0.59px;
+  line-height: normal;
+}
+
+.domain-search-area__search-btn {
+  position: relative;
+  margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+  .domain-search-area__search-btn {
+    margin-top: 00px;
+  }
+}
+
+.domain-search-area__search-btn .btn {
+  min-width: 100%;
+  height: 50px;
+  box-shadow: 21px 15px 23px rgba(65, 111, 244, 0.11);
+  border-radius: 45px;
+  background-color: #416ff4;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: -0.53px;
+  line-height: normal;
+}
+
+@media (min-width: 768px) {
+  .domain-search-area__search-btn .btn {
+    min-width: 198px;
+    height: 70px;
+  }
+}
+
+.domain-search-area__search-btn i {
+  position: absolute;
+  font-size: 16px;
+  color: #fff;
+  top: 50%;
+  left: 38px;
+  transform: translate(-50%, -50%);
+}
+
+.domain-price-area {
+  margin-top: 30px;
+}
+
+@media (min-width: 576px) {
+  .domain-price-area {
+    margin-top: 40px;
+  }
+}
+
+.domain-price-area__single {
+  margin-bottom: -10px;
+}
+
+@media (min-width: 576px) {
+  .domain-price-area__single {
+    margin-bottom: 0px;
+  }
+}
+
+.domain-price-area__single span {
+  color: #81838C;
+  font-size: 16px;
+  font-weight: 700;
+  display: inline-block;
+  font-style: normal;
+  letter-spacing: -0.66px;
+  line-height: normal;
+  margin: 10px 15px;
+}
+
+@media (min-width: 480px) {
+  .domain-price-area__single span {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 576px) {
+  .domain-price-area__single span {
+    margin: 0px;
+  }
+}
