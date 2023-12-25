@@ -355,49 +355,89 @@ $(document).ready(function() {
             }
         });
     });
+    if (jQuery(".product-slider-l5").length > 0) {
+        $('.product-slider-l5').slick({
 
-    $(window).on('load resize orientationchange', function() {
-        $(".testimonial--mobile-slider--l5").each(function() {
-            var $carousel = $(this);
-            /* Initializes a slick carousel only on mobile screens */
-            // slick on mobile
-            if ($(window).width() > 1199) {
-                if ($carousel.hasClass("slick-initialized")) {
-                    $carousel.slick("unslick");
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            // autoplay: true,
+            swipe: true,
+            infinite: true,
+            autoplaySpeed: 2000,
+            appendArrows: '.l5-product-slider',
+            prevArrow: $('.prev5-1'),
+            nextArrow: $('.next5-1'),
+            responsive: [{
+                    breakpoint: 1199,
+                    settings: {
+                        centerPadding: '10%',
+                        slidesToShow: 2
+                    }
+                },
+                {
+                    breakpoint: 767,
+                    settings: {
+                        centerPadding: '20px',
+                        slidesToShow: 1
+                    }
                 }
-            } else {
-                if (!$carousel.hasClass("slick-initialized")) {
-                    $carousel.slick({
-                        slidesToShow: 2,
-                        speed: 800,
-                        slidesToScroll: 1,
-                        arrows: false,
-                        dots: false,
-                        autoplay: true,
-                        autoplaySpeed: 3000,
-                        responsive: [{
-                                breakpoint: 1199,
 
-                                settings: {
-                                    slidesToShow: 2,
-                                    slidesToScroll: 2,
-                                },
-                            },
-                            {
-                                breakpoint: 768,
+            ]
+        });
+    }
 
-                                settings: {
-                                    slidesToShow: 1,
-                                    slidesToScroll: 1,
-                                },
-                            },
 
-                        ],
-                    });
-                }
-            }
+    /* Landing 5 Product Slider button active*/
+
+    $(document).ready(function() {
+        $('.l5-product-slider i').click(function() {
+            $('.l5-product-slider i').removeClass("slick-active");
+            $(this).addClass("slick-active");
         });
     });
+
+    // $(window).on('load resize orientationchange', function() {
+    //     $(".testimonial--mobile-slider--l5").each(function() {
+    //         var $carousel = $(this);
+    //         /* Initializes a slick carousel only on mobile screens */
+    //         // slick on mobile
+    //         if ($(window).width() > 1199) {
+    //             if ($carousel.hasClass("slick-initialized")) {
+    //                 $carousel.slick("unslick");
+    //             }
+    //         } else {
+    //             if (!$carousel.hasClass("slick-initialized")) {
+    //                 $carousel.slick({
+    //                     slidesToShow: 2,
+    //                     speed: 800,
+    //                     slidesToScroll: 1,
+    //                     arrows: false,
+    //                     dots: false,
+    //                     autoplay: true,
+    //                     autoplaySpeed: 3000,
+    //                     responsive: [{
+    //                             breakpoint: 1199,
+
+    //                             settings: {
+    //                                 slidesToShow: 2,
+    //                                 slidesToScroll: 2,
+    //                             },
+    //                         },
+    //                         {
+    //                             breakpoint: 768,
+
+    //                             settings: {
+    //                                 slidesToShow: 1,
+    //                                 slidesToScroll: 1,
+    //                             },
+    //                         },
+
+    //                     ],
+    //                 });
+    //             }
+    //         }
+    //     });
+    // });
 
 
     $('.welcome-slider-l9').slick({
