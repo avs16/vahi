@@ -360,7 +360,7 @@ $(document).ready(function() {
 
             slidesToShow: 3,
             slidesToScroll: 1,
-            // autoplay: true,
+            autoplay: true,
             swipe: true,
             infinite: true,
             autoplaySpeed: 2000,
